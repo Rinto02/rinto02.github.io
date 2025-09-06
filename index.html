@@ -1,107 +1,522 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Resume - Md Alif Hossain</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>ALIF | My Personal CV</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
 </head>
-<body>
-  <div class="resume-container d-flex">
-    <!-- Left Sidebar -->
-    <div class="sidebar p-4">
-      <h2 class="name">HOSSAIN<br><span>MD ALIF</span></h2>
-      <p class="title">COMPUTER OPERATOR</p>
-      
-      <h5 class="section-title">Contact</h5>
-      <p>Bagowan, Mujibnagar, Meherpur</p>
-      <p><a href="https://rinto02.github.io" target="_blank">rinto02.github.io</a></p>
-      <p>+8801308927345</p>
-      <p>rintokhan411@gmail.com</p>
 
-      <h5 class="section-title">Skills</h5>
-      <ul>
-        <li>Project Management</li>
-        <li>Problem Solving</li>
-        <li>Creativity</li>
-        <li>Leadership</li>
-      </ul>
+<body class="index-page">
 
-      <h5 class="section-title">Language Speaking & Writing</h5>
-      <ul>
-        <li>Bengali</li>
-        <li>English</li>
-        <li>Japanese</li>
-      </ul>
+  <header id="header" class="header dark-background d-flex flex-column justify-content-center">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
 
-      <h5 class="section-title">ICT Skills</h5>
-      <ul>
-        <li>MS Office</li>
-        <li>Adobe (Ai, PS, AE, AP)</li>
-        <li>CPU/Hardware</li>
-        <li>Operating System</li>
-        <li>HTML, Java, Kotlin, C</li>
-        <li>Web Knowledge</li>
-        <li>Ads Management</li>
-        <li>Software Solutions</li>
-      </ul>
+    <div class="header-container d-flex flex-column align-items-start">
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
+          <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
+          <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
+          <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
+          <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i> Services</a></li>
+          <li class="dropdown"><a href="#"><i class="bi bi-menu-button navicon"></i> <span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="#">Dropdown 1</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="#">Deep Dropdown 1</a></li>
+                  <li><a href="#">Deep Dropdown 2</a></li>
+                  <li><a href="#">Deep Dropdown 3</a></li>
+                  <li><a href="#">Deep Dropdown 4</a></li>
+                  <li><a href="#">Deep Dropdown 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Dropdown 2</a></li>
+              <li><a href="#">Dropdown 3</a></li>
+              <li><a href="#">Dropdown 4</a></li>
+            </ul>
+          </li>
+          <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="social-links text-center">
+        <a href="https://x.com/rintokhan6" class="twitter"><i class="bi bi-twitter-x"></i></a>
+        <a href="https://facbook.com/rinto.official.rinto" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="https://instagram.com/rinto_khan_alif" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="google-plus"><i class="bi bi-skype"></i></a>
+        <a href="https://www.linkedin.com/in/rinto-khan-3413311b9/" class="linkedin"><i class="bi bi-linkedin"></i></a>
+      </div>
+
     </div>
 
-    <!-- Right Content -->
-    <div class="content p-4">
-      <h3>Career Objective</h3>
-      <p>I am a dedicated and detail-oriented Computer Operator and IT Support with hands-on experience in managing computer systems, troubleshooting hardware and software issues, and ensuring smooth IT operations. I possess strong problem-solving skills, a keen eye for technical details, and the ability to work efficiently both independently and in a team.</p>
+  </header>
 
-      <h3>Education</h3>
-      <ul>
-        <li>Secondary School Certificate – Science – 2018 – Jessore – GPA: 3.88/5.00</li>
-        <li>Higher Secondary Certificate – An-noor Technical and B.M College – 2023 – Business Studies – GPA: 3.96/5.00</li>
-      </ul>
+  <main class="main">
 
-      <h3>Duties / Responsibilities</h3>
-      <ul>
-        <li>Coordinating team brand and communication.</li>
-        <li>Monitor and report on effectiveness of marketing communications.</li>
-        <li>Prepare professional branding plan and motivate branding team.</li>
-        <li>Writing and presenting reports to senior management.</li>
-        <li>Organizing various branding and marketing events.</li>
-        <li>Brief and train branding personnel.</li>
-      </ul>
+    <!-- Hero Section -->
+    <section id="hero" class="hero section">
 
-      <h3>Skills Summary</h3>
-      <ul class="skills-summary">
-        <li>Design Process <span>78%</span></li>
-        <li>Project Management <span>81%</span></li>
-        <li>Data Visualization <span>93%</span></li>
-        <li>Machine Learning <span>47%</span></li>
-      </ul>
+      <div class="background-elements">
+        <div class="bg-circle circle-1"></div>
+        <div class="bg-circle circle-2"></div>
+      </div>
 
-      <h3>Personal Details</h3>
-      <p><strong>Name:</strong> Md Alif Hossain<br>
-      <strong>Father’s Name:</strong> Md Anod Ali<br>
-      <strong>Mother’s Name:</strong> Mst Asiya Khatun<br>
-      <strong>Date of Birth:</strong> 1 March 2003<br>
-      <strong>National ID No.:</strong> 3777608898<br>
-      <strong>Marital Status:</strong> Single<br>
-      <strong>Religion:</strong> Islam<br>
-      <strong>Nationality:</strong> Bangladeshi<br>
-      <strong>Blood Group:</strong> O+<br>
-      <strong>Present Address:</strong> Bagowan, Mujibnagar-7102, Meherpur<br>
-      <strong>Permanent Address:</strong> Bagowan, Mujibnagar-7102, Meherpur</p>
+      <div class="hero-content">
 
-      <h3>Hobbies & Interests</h3>
-      <ul>
-        <li>Bike Riding</li>
-        <li>Gaming</li>
-        <li>Self-confidence & being positive</li>
-        <li>Ability to manage time & being flexible</li>
-        <li>Ability to work efficiently under pressure & fulfill deadlines</li>
-        <li>Open mind in adapting to new challenges</li>
-      </ul>
+        <div class="container">
+          <div class="row align-items-center">
 
-      <p class="signature">Date: <strong>Md Alif Hossain</strong></p>
-    </div>
+            <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
+              <div class="hero-text">
+                <h1>RESUME <span class="accent-text">OF</span></h1>
+                <h2>MD ALIF HOSSAIN</h2>
+                <p class="lead">I'm a <span class="typed" data-typed-items="Graphics Designer, Web Developer, Operator, Software Specialist"></span></p>
+                <p class="description">Passionate about creating exceptional digital experiences that blend innovative design with functional development. Let's bring your vision to life.</p>
+
+                <div class="hero-actions">
+                  <a href="#portfolio" class="btn btn-primary">View My Work</a>
+                  <a href="#contact" class="btn btn-outline">Get In Touch</a>
+                </div>
+
+                <div class="social-links">
+                  <a href="#"><i class="bi bi-dribbble"></i></a>
+                  <a href="#"><i class="bi bi-behance"></i></a>
+                  <a href="https://github.com/rinto02"><i class="bi bi-github"></i></a>
+                  <a href="https://www.linkedin.com/in/rinto-khan-3413311b9/"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
+              <div class="hero-visual">
+                <div class="profile-container">
+                  <div class="profile-background"></div>
+                  <img src="assets/img/profile/profile-2.webp" alt="Alif Hossain" class="profile-image">
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row">
+          <div class="col-lg-5" data-aos="zoom-in" data-aos-delay="200">
+            <div class="profile-card">
+              <div class="profile-header">
+                <div class="profile-image">
+                  <img src="assets/img/profile/profile-square-3.webp" alt="Profile Image" class="img-fluid">
+                </div>
+                <div class="profile-badge">
+                  <i class="bi bi-check-circle-fill"></i>
+                </div>
+              </div>
+
+              <div class="profile-content">
+                <h3>Md Alif Hossain</h3>
+                <p class="profession">Graphics Designer &amp; Software Specialist</p>
+
+                <div class="contact-links">
+                  <a href="mailto:@gmail.com" class="contact-item">
+                    <i class="bi bi-envelope"></i>
+                    @gmail.com
+                  </a>
+                  <a href="tel:+880" class="contact-item">
+                    <i class="bi bi-telephone"></i>
+                    +880 
+                  </a>
+                  <a href="#" class="contact-item">
+                    <i class="bi bi-geo-alt"></i>
+                    Bagowan, Mujibnagar, Meherpur
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-7" data-aos="fade-left" data-aos-delay="300">
+            <div class="about-content">
+              <div class="section-header">
+                <span class="badge-text">Get to Know Me</span>
+                <h2>Passionate About Creating Digital Experiences</h2>
+              </div>
+
+              <div class="description">
+                <p>Passionate about crafting engaging and meaningful digital experiences. Focused on blending creativity with technology to deliver user-friendly solutions.</p>
+
+                <p> Dedicated to transforming ideas into impactful digital products.</p>
+              </div>
+
+              <div class="details-grid">
+                <div class="detail-row">
+                  <div class="detail-item">
+                    <span class="detail-label">Specialization</span>
+                    <span class="detail-value">Graphics Design &amp; Software Solutions</span>
+                  </div>
+                  <div class="detail-item">
+                    <span class="detail-label">Experience Level</span>
+                    <span class="detail-value">Software Specialist</span>
+                  </div>
+                </div>
+                <div class="detail-row">
+                  <div class="detail-item">
+                    <span class="detail-label">Education</span>
+                    <span class="detail-value">Science, Secretarial Science</span>
+                  </div>
+                  <div class="detail-item">
+                    <span class="detail-label">Languages</span>
+                    <span class="detail-value">Bangla, English, Japanese, Hindi Speaking only</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="cta-section">
+                <a href="#" class="btn btn-primary">
+                  <i class="bi bi-download"></i>
+                  Download Resume
+                </a>
+                <a href="#" class="btn btn-outline">
+                  <i class="bi bi-chat-dots"></i>
+                  Let's Talk
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Skills</h2>
+        <p>Skilled in designing and developing user-friendly digital solutions that blend creativity with technology.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="skills-category" data-aos="fade-up" data-aos-delay="200">
+              <h3>Computer Skills</h3>
+              <div class="skills-animation">
+                <div class="skill-item">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h4>MS Office/Adobe</h4>
+                    <span class="skill-percentage">99%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="99" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <div class="skill-tooltip">Expert level knowledge of semantic Adobe and MS Office</div>
+                </div>
+
+                <div class="skill-item">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h4>CPU/Hardware</h4>
+                    <span class="skill-percentage">85%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <div class="skill-tooltip">Strong knowledge about hardware and cpu</div>
+                </div>
+
+                <div class="skill-item">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h4>Software Solutions</h4>
+                    <span class="skill-percentage">100%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <div class="skill-tooltip">Excellent capabilites solving software problems</div>
+                </div>
+              </div>
+            </div><!-- End Computer Skills -->
+          </div>
+
+          <div class="col-lg-6">
+            <div class="skills-category" data-aos="fade-up" data-aos-delay="300">
+              <h3>ICT Skills</h3>
+              <div class="skills-animation">
+                <div class="skill-item">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h4>HTML/Java</h4>
+                    <span class="skill-percentage">50%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <div class="skill-tooltip">Intermediate Coding development</div>
+                </div>
+
+                <div class="skill-item">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h4>Internet Experience</h4>
+                    <span class="skill-percentage">100%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <div class="skill-tooltip">Extreme knowledge about web browsing</div>
+                </div>
+
+                <div class="skill-item">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h4>Ads Management</h4>
+                    <span class="skill-percentage">90%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <div class="skill-tooltip">Experienced at running all types of ads</div>
+                </div>
+              </div>
+            </div><!-- End ICT Skills -->
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Skills Section -->
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Resume</h2>
+        <p>I am a dedicated and detail-oriented Computer Operator and IT Support with hands-on experience in managing computer systems, troubleshooting hardware and software issues, and ensuring smooth IT operations. I possess strong problem-solving skills, a keen eye for technical details, and the ability to work efficiently both independently and in a team.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+          <!-- Left column with summary and contact -->
+          <div class="col-lg-4">
+            <div class="resume-side" data-aos="fade-right" data-aos-delay="100">
+              <div class="profile-img mb-4">
+                <img src="assets/img/profile/profile-square-2.webp" alt="Profile" class="img-fluid rounded">
+              </div>
+
+              <h3>Professional Summary</h3>
+              <p>Driven software architect with expertise in developing scalable, high-performance enterprise solutions. Passionate about leveraging cutting-edge technologies to solve complex business challenges.</p>
+
+              <h3 class="mt-4">Contact Information</h3>
+              <ul class="contact-info list-unstyled">
+                <li><i class="bi bi-geo-alt"></i> Bagowan, Mujibnagar, Meherpur</li>
+                <li><i class="bi bi-envelope"></i> rintokhan411@gmail.com</li>
+                <li><i class="bi bi-phone"></i> +880</li>
+                <li><i class="bi bi-linkedin"></i> linkedin.com/in/rinto-khan-3413311b9</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Right column with experience and education -->
+          <div class="col-lg-8 ps-4 ps-lg-5">
+            <!-- Education Section -->
+            <div class="resume-section" data-aos="fade-up" data-aos-delay="100">
+              <h3><i class="bi bi-mortarboard me-2"></i>Education</h3>
+
+              <div class="resume-item">
+                <h4>higher Secondary Certificate</h4>
+                <h5>2023</h5>
+                <h5>GPA 3.96</h5>
+                <h5>Secretarial Science</h5>
+                <h5>BTEB</h5>
+                <p class="company"><i class="bi bi-building"></i> An-noor Technical and B.M College, Meherpur</p>
+                <p>Specialized in Secretarial Science and Graduated with honors.</p>
+              </div>
+
+              <div class="resume-item">
+                <h4>Secondary School Certificate</h4>
+                <h5>2018</h5>
+                <h5>GPA 3.83</h5>
+                <h5>Science</h5>
+                <h5>Jashore</h5>
+                <p class="company"><i class="bi bi-building"></i> Bagowan High School, Meherpur</p>
+                <p>Specialized in Science and Graduated with honors.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Resume Section -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contact</h2>
+        <p>If you have any questions, feedback, or collaboration ideas, feel free to reach out to us anytime. We’d love to hear from you!</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row g-4 g-lg-5">
+          <div class="col-lg-5">
+            <div class="info-box">
+              <h3>Contact Info</h3>
+              <p>Present a healthy body, with a combination of flexibility, endurance, and balanced growth. Take care of the basics first.</p>
+
+              <div class="info-item">
+                <div class="icon-box">
+                  <i class="bi bi-geo-alt"></i>
+                </div>
+                <div class="content">
+                  <h4>Location</h4>
+                  <p>Bagowan</p>
+                  <p>Mujibnagar, Meherpur</p>
+                </div>
+              </div>
+
+              <div class="info-item">
+                <div class="icon-box">
+                  <i class="bi bi-telephone"></i>
+                </div>
+                <div class="content">
+                  <h4>Phone Number</h4>
+                  <p>+880</p>
+                  <p>+880</p>
+                </div>
+              </div>
+
+              <div class="info-item">
+                <div class="icon-box">
+                  <i class="bi bi-envelope"></i>
+                </div>
+                <div class="content">
+                  <h4>Email Address</h4>
+                  <p>rinto@.com</p>
+                  <p>rintokhan.me</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-7">
+  <div class="contact-form">
+    <h3>Get In Touch</h3>
+    <p>I’d love to hear from you, feel free to reach out anytime.</p>
+
+    <form id="contactForm" method="post">
+      <div class="row gy-4">
+
+        <div class="col-md-6">
+          <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+        </div>
+
+        <div class="col-md-6">
+          <input type="email" class="form-control" name="email" placeholder="Your Email" required>
+        </div>
+
+        <div class="col-12">
+          <input type="text" class="form-control" name="subject" placeholder="Subject" required>
+        </div>
+
+        <div class="col-12">
+          <textarea class="form-control" name="message" rows="6" placeholder="Message" required></textarea>
+        </div>
+
+        <div class="col-12 text-center">
+          <p id="formMessage"></p>
+          <button type="submit" class="btn">Send Message</button>
+        </div>
+
+      </div>
+    </form>
   </div>
+</div>
+
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <footer id="footer" class="footer position-relative">
+
+    <div class="container">
+      <div class="copyright text-center ">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">iPortfolio</strong> <span>All Rights Reserved</span></p>
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
 </body>
+
 </html>
