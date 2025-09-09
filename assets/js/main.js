@@ -226,4 +226,48 @@
   window.addEventListener('load', navmenuScrollspy);
   document.addEventListener('scroll', navmenuScrollspy);
 
+
+/**
+   * AJAX Contact Form
+   */
+  const contactForm = document.getElementById('contactForm');
+  if (contactForm) {
+    const formMessage = document.getElementById('formMessage');
+    const submitButton = contactForm.querySelector('button[type="submit"]');
+
+    contactForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      // Disable button while sending
+      submitButton.disabled = true;
+      submitButton.textContent = "Sending...";
+
+      const formData = new FormData(contactForm);
+
+      fetch('contact.php', {
+        method: 'POST',
+        body: formData
+      })
+      .then(response => response.json())
+      .then(data => {
+        if (data.status === 'success') {
+          formMessage.style.color = 'green';
+          formMessage.textContent = data.message;
+          contactForm.reset();
+        } else {
+          formMessage.style.color = 'red';
+          formMessage.textContent = data.message;
+        }
+      })
+      .catch(error => {
+        formMessage.style.color = 'red';
+        formMessage.textContent = 'An error occurred.';
+      })
+      .finally(() => {
+        submitButton.disabled = false;
+        submitButton.textContent = "Send Message";
+      });
+    });
+  }
+
 })();
